@@ -6,12 +6,18 @@ import { DatabaseService } from '../database.service';
   templateUrl: './admin-tools.component.html',
   styleUrls: ['./admin-tools.component.css']
 })
+
+/*
+  MR: may be more of a opinion but the file structure of the project could be refined.
+  Having a component with child components in the same folder can make it tough to read 
+*/
 export class AdminToolsComponent implements OnInit {
 
   errors:any;
   partTypeList:any;
 
   constructor(
+    //MR: This feels like a leftover but you probably don't need it
     private _db: DatabaseService,
   ) { }
 
