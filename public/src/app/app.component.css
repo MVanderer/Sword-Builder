@@ -1,3 +1,6 @@
+/* 
+    MR: Styling ids isn't best practice for CSS.
+*/
 #navBar {
     position: fixed;
     top: 0;

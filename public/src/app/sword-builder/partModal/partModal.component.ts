@@ -36,6 +36,7 @@ export class PartModalComponent implements OnChanges {
   
   fillOut(file){
     let idx: Number;
+    // MR: This feels like a candiate for array comparison rather than if else.  Or a switch.  I just don't super like switches.
     if (this.partType=="blade"){idx=0}
     else if (this.partType=="guard"){idx=1}
     else if (this.partType=="grip"){idx=2}

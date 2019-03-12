@@ -1,3 +1,6 @@
+[comment]: <> (MR: A strong README would help this project a whole lot.  With a README, laypeople can pick up a project and help a whole lot more.  Learning it on the fly has been a bit tricky.  Either in the Root of the project or in the root of the FE.)
+[comment]: <> (MR: A Mongo Seeder would come in handy for picking the project up quickly)
+
 # Public
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
@@ -14,6 +17,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+
+[comment]: <> (MR: Unit tests are a bit lacking, if they aren't being used, you may want to remove them from the project to clean it up.)
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
