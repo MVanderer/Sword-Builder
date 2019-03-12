@@ -39,6 +39,7 @@
     <div (click)="cameraMove(0,0,-1)">M Z - </div>
   </div>
 
+  <!-- MR: These don't resize the way I would expect them to, maybe worth looking into -->
   <app-partModal class="part-modal" [style.display]="showingModal" [partType]="modalSubject" [currentSetup]="swordGeo" (modalStat)="hideModal($event)">
   </app-partModal>
 

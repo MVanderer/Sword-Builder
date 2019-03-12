@@ -7,8 +7,13 @@ import { SwordRenderService } from '../sword-render.service';
   styleUrls: ['./sword-builder.component.css']
 })
 export class SwordBuilderComponent implements OnInit {
+  //MR: Comments useful for figuring things out
 
   showingModal:String;//turn into bool instead?
+  /*
+    MR: would it make sense to be an array index?  ie 0 is hidden, 1 is blade, 2 is block, ...  
+    This way it can expand if there are other parts if there are later expansions
+  */
   modalSubject:String;
   
   //these variables are for manually rotating the model
@@ -114,6 +119,12 @@ export class SwordBuilderComponent implements OnInit {
     this.showingModal=status;
     this._swordServ.cameraSet(this.cameraPresets.armingSwordFull);
   }
+
+  /* 
+    MR: These four functions could be collapsed into one function. 
+    Like: function(path, name, cameraSet)
+    Then indexof name to get swordGeo index
+  */
 
   changeBlade(blade) {
     this.swordGeo[0] = blade;

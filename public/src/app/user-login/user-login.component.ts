@@ -13,6 +13,8 @@ export class UserLoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  // MR: this.flip() could be reduced to one line, something like -- this.logingIn = !this.logingIn
+
   flip(){
     if (this.logingIn) {
       this.logingIn=false;

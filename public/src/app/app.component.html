@@ -1,7 +1,9 @@
 <div id="navBar">
     <h1 [routerLink]="['/home']" style="cursor: pointer">SwordBuilder</h1>
     <div id="menuBtn">
+        <!-- MR: General point, maybe worth hosting images/objects somewhere in the cloud (could also be in mongo) -->
         <img src="/assets/img/menuBtn.png">
+        <!-- MR: Look into anchoring the popup to something, its floating in the ether right now. -->
         <div id="menu">
             <a [routerLink]="['/swordbuilder']">SwordBuilder</a>
             <a [routerLink]="['/premades']">Premade Swords</a>

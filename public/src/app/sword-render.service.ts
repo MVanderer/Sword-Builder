@@ -148,6 +148,7 @@ export class SwordRenderService {
         this.loader.load(
             swordGeo[0],
             (object) => {
+                // MR: Using Blade oject to label the console log really helps out.  Over all you're really good at labeling!
                 console.log("blade object: ", swordGeo[0]);
                 
                 this.scene.remove(this.sword.parts[0]);
@@ -163,7 +164,6 @@ export class SwordRenderService {
                     this.loader.load(swordGeo[i], (part) => {
                         this.scene.remove(this.sword.parts[i]);
                         console.log(part);
-
                         part.children[0].material = material;
                         this.grip=part.children[0];
                         this.sword.parts[i] = part.children[0];

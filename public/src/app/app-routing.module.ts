@@ -7,6 +7,8 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { PremadesComponent } from './premades/premades.component';
 import { AdminToolsComponent } from './admin-tools/admin-tools.component';
 
+// MR: This is super clean!  Good job!
+
 const routes: Routes = [
   {path:'home',component:LandingPageComponent},
   {path:'swordbuilder',component:SwordBuilderComponent},
